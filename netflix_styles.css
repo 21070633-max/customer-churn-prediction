@@ -1,0 +1,217 @@
+/* ===== Netflix-inspired lighter theme ===== */
+
+:root {
+    --netflix-red: #E50914;
+    --netflix-dark: #181818;
+    --netflix-dark-2: #222222;
+    --netflix-card: #2b2b2b;
+    --netflix-card-2: #333333;
+    --netflix-text: #ffffff;
+    --netflix-subtext: #d0d0d0;
+    --netflix-border: #4a4a4a;
+    --success: #46d369;
+    --warning: #f5c518;
+    --danger: #ff4d4f;
+}
+
+.logo-banner {
+    .logo-banner {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+}
+
+.logo-title {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 5.4rem;
+}
+
+.logo-subtitle {
+    margin-top: 4px;
+    color: #777;
+    font-size: 1rem;
+}
+
+.banner-box {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(229, 9, 20, 0.25);
+    border-radius: 16px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+}
+
+/* Nền chính */
+.stApp {
+    background: linear-gradient(180deg, #1a1a1a 0%, #242424 100%);
+    color: var(--netflix-text);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Container chính */
+.block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    max-width: 1400px;
+}
+
+/* Title */
+h1, h2, h3 {
+    color: var(--netflix-text) !important;
+    font-weight: 700 !important;
+}
+
+/* Divider */
+hr {
+    border-color: rgba(229, 9, 20, 0.35) !important;
+}
+
+/* Labels */
+label, .stMarkdown, p, div {
+    color: var(--netflix-text);
+}
+
+/* Input */
+.stNumberInput input,
+.stTextInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"] > div {
+    background-color: #3a3a3a !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+    border-radius: 12px !important;
+}
+
+/* Select */
+div[data-baseweb="select"] {
+    background-color: transparent !important;
+}
+
+/* Form area / card look */
+[data-testid="stForm"] {
+    background: linear-gradient(180deg, #2a2a2a 0%, #242424 100%);
+    border: 1px solid rgba(229, 9, 20, 0.45);
+    border-radius: 18px;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Buttons */
+.stButton > button,
+.stFormSubmitButton > button {
+    background: linear-gradient(90deg, #E50914 0%, #b20710 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1.2rem !important;
+    font-weight: 700 !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.35);
+}
+
+/* Metric box */
+div[data-testid="metric-container"] {
+    background: linear-gradient(180deg, #2d2d2d 0%, #252525 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+/* Dataframe */
+div[data-testid="stDataFrame"] {
+    background-color: #2f2f2f;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.4rem;
+}
+
+/* Alerts */
+.stSuccess, .stInfo, .stWarning, .stError {
+    border-radius: 14px !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #202020 !important;
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Custom banner */
+.netflix-banner {
+    background: linear-gradient(90deg, #2a2a2a 0%, #1c1c1c 100%);
+    border: 1px solid rgba(229, 9, 20, 0.5);
+    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.netflix-logo-text {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #E50914;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1;
+}
+
+.netflix-banner-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+}
+
+.netflix-banner-subtitle {
+    margin: 0.2rem 0 0 0;
+    color: #d0d0d0;
+    font-size: 0.95rem;
+}
+
+/* Badge styles */
+.netflix-badge-low {
+    display: inline-block;
+    background: rgba(70, 211, 105, 0.15);
+    color: #7CFC98;
+    border: 1px solid rgba(70, 211, 105, 0.35);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.netflix-badge-medium {
+    display: inline-block;
+    background: rgba(245, 197, 24, 0.15);
+    color: #ffd84d;
+    border: 1px solid rgba(245, 197, 24, 0.35);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.netflix-badge-high {
+    display: inline-block;
+    background: rgba(229, 9, 20, 0.15);
+    color: #ff6b6b;
+    border: 1px solid rgba(229, 9, 20, 0.4);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+/* Ẩn menu/footer mặc định nếu muốn */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
