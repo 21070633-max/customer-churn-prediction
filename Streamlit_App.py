@@ -7,9 +7,8 @@ import pickle
 from config import load_css, set_netflix_config
 
 APP_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = APP_DIR.parent
-MODEL_DIR = PROJECT_ROOT / "model"
-LOGO_PATH = PROJECT_ROOT / "images.png"
+MODEL_DIR = APP_DIR / "model"
+LOGO_PATH = APP_DIR / "images.png"
 
 # Load CSS and page configuration
 load_css()
